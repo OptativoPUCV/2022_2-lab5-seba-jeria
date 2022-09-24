@@ -62,3 +62,27 @@ treemap.c:44:39: error: ‘key1’ undeclared (first use in this function)
       |                                       ^~~~
 Compilation failed
 8d39018
+Sat 24 Sep 2022 12:40:54 AM UTC: 
+ treemap.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘createTreeMap’:
+treemap.c:45:32: error: dereferencing ‘void *’ pointer [-Werror]
+   45 |     Map->root = createTreeNode(*key2, NULL);
+      |                                ^~~~~
+treemap.c:45:32: error: invalid use of void expression
+treemap.c:46:38: error: dereferencing ‘void *’ pointer [-Werror]
+   46 |     Map->root->left = createTreeNode(*key1, NULL);
+      |                                      ^~~~~
+treemap.c:46:38: error: invalid use of void expression
+treemap.c:50:32: error: dereferencing ‘void *’ pointer [-Werror]
+   50 |     Map->root = createTreeNode(*key1, NULL);
+      |                                ^~~~~
+treemap.c:50:32: error: invalid use of void expression
+treemap.c:51:39: error: dereferencing ‘void *’ pointer [-Werror]
+   51 |     Map->root->right = createTreeNode(*key2, NULL);
+      |                                       ^~~~~
+treemap.c:51:39: error: invalid use of void expression
+cc1: all warnings being treated as errors
+Compilation failed
+5c31beb
