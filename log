@@ -2,3 +2,21 @@ Sat 24 Sep 2022 12:13:58 AM UTC:
  tests:  1|8
 total_score: 0/70
 8db37c9
+Sat 24 Sep 2022 12:34:18 AM UTC: 
+ treemap.c | 16 +++++++++++++---
+ 1 file changed, 13 insertions(+), 3 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘createTreeMap’:
+treemap.c:42:18: error: comparison between pointer and integer [-Werror]
+   42 |   if (lower_than == 1){
+      |                  ^~
+treemap.c:43:32: error: ‘key2’ undeclared (first use in this function)
+   43 |     Map->root = createTreeNode(key2, NULL);
+      |                                ^~~~
+treemap.c:43:32: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:44:38: error: ‘key1’ undeclared (first use in this function)
+   44 |     Map->root->left = createTreeNode(key1, NULL);
+      |                                      ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1256571
