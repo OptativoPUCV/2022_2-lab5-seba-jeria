@@ -34,3 +34,17 @@ treemap.c:44:38: error: ‘key1’ undeclared (first use in this function)
       |                                      ^~~~
 Compilation failed
 a692086
+Sat 24 Sep 2022 12:35:24 AM UTC: 
+ treemap.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘createTreeMap’:
+treemap.c:43:33: error: ‘key2’ undeclared (first use in this function)
+   43 |     Map->root = createTreeNode(*key2, NULL);
+      |                                 ^~~~
+treemap.c:43:33: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:44:39: error: ‘key1’ undeclared (first use in this function)
+   44 |     Map->root->left = createTreeNode(*key1, NULL);
+      |                                       ^~~~
+Compilation failed
+33c5119
