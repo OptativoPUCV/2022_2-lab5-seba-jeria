@@ -100,3 +100,9 @@ treemap.c:46:23: error: ‘key1’ may be used uninitialized in this function [-
 cc1: all warnings being treated as errors
 Compilation failed
 a760100
+Sat 24 Sep 2022 02:27:58 AM UTC: 
+ treemap.c | 12 ------------
+ 1 file changed, 12 deletions(-)
+ tests:  4|7
+total_score: 5/70
+4993d1f
