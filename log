@@ -148,3 +148,32 @@ treemap.c:61:1: error: control reaches end of non-void function [-Werror=return-
 cc1: all warnings being treated as errors
 Compilation failed
 5d3ffd4
+Sun 25 Sep 2022 11:20:41 PM UTC: 
+ treemap.c | 11 ++++++-----
+ 1 file changed, 6 insertions(+), 5 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘minimum’:
+treemap.c:52:6: error: ‘TreeNode’ has no member named ‘current’
+   52 |   new->current = x;
+      |      ^~
+treemap.c:53:9: error: ‘TreeNode’ has no member named ‘current’
+   53 |   if(new->current->left == NULL){
+      |         ^~
+treemap.c:57:15: error: ‘TreeNode’ has no member named ‘current’
+   57 |     while (new->current->left != NULL){
+      |               ^~
+treemap.c:58:10: error: ‘TreeNode’ has no member named ‘current’
+   58 |       new->current = new->current->left;
+      |          ^~
+treemap.c:58:25: error: ‘TreeNode’ has no member named ‘current’
+   58 |       new->current = new->current->left;
+      |                         ^~
+treemap.c:60:15: error: ‘TreeNode’ has no member named ‘current’
+   60 |     return new->current;
+      |               ^~
+treemap.c:62:1: error: control reaches end of non-void function [-Werror=return-type]
+   62 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+8255e8b
