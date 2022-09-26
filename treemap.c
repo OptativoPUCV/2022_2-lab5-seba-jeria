@@ -155,6 +155,7 @@ Pair * nextTreeMap(TreeMap * tree) {
   }
   else{
     tree->current = tree->current->parent;
+    tree->current = tree->current->right;
     if(tree->current->left != NULL){
       while(tree->current->left != NULL){
         tree->current = tree->current->left;
