@@ -145,6 +145,7 @@ Pair * firstTreeMap(TreeMap * tree) {
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
+  if (tree==NULL) return NULL;
   if(tree->current->right != NULL){
     tree->current = tree->current->right;
     if(tree->current->left != NULL){
@@ -162,9 +163,6 @@ Pair * nextTreeMap(TreeMap * tree) {
           tree->current = tree->current->left;
         }
       }
-    }
-    else{
-      return NULL;
     }
   }
   return tree->current->pair;
