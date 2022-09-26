@@ -155,6 +155,11 @@ Pair * nextTreeMap(TreeMap * tree) {
   }
   else{
     tree->current = tree->current->parent;
+    if(tree->current->left != NULL){
+      while(tree->current->left != NULL){
+        tree->current = tree->current->left;
+      }
+    }
   }
   return tree->current->pair;
 }
