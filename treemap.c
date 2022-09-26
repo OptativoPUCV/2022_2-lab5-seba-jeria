@@ -133,7 +133,18 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
 
 
 Pair * upperBound(TreeMap * tree, void* key) {
-    return NULL;
+  /*TreeNode* aux = (TreeNode *)malloc(sizeof(TreeNode));
+  tree->current = tree->root;
+  
+  if(tree->current->pair->key > key){
+    while(key != tree->current->pair->key){
+      
+    }
+  }
+  else{
+    
+  }
+  return aux->pair;*/return NULL;
 }
 
 Pair * firstTreeMap(TreeMap * tree) {
@@ -145,7 +156,7 @@ Pair * firstTreeMap(TreeMap * tree) {
 }
 
 Pair * nextTreeMap(TreeMap * tree) {
-  if (tree==NULL) return NULL;
+  if(tree->current->right == NULL) return NULL;
   if(tree->current->right != NULL){
     tree->current = tree->current->right;
     if(tree->current->left != NULL){
