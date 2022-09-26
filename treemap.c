@@ -131,11 +131,11 @@ Pair * upperBound(TreeMap * tree, void* key) {
 
 Pair * firstTreeMap(TreeMap * tree) {
   TreeNode* new = (TreeNode *)malloc(sizeof(TreeNode));
-  new->current = tree->left;
-  while(new->current != NULL){
-    new->current = tree->left;
+  new->left = tree->left;
+  while(new->left != NULL){
+    new->left = tree->left;
   }
-  return new->current->pair->value;
+  return new->left->pair->value;
 }
 
 Pair * nextTreeMap(TreeMap * tree) {

@@ -282,3 +282,16 @@ treemap.c:139:1: error: control reaches end of non-void function [-Werror=return
 cc1: all warnings being treated as errors
 Compilation failed
 69f9e6e
+Mon 26 Sep 2022 12:46:07 AM UTC: 
+ treemap.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘firstTreeMap’:
+treemap.c:134:19: error: ‘TreeMap’ has no member named ‘left’
+  134 |   new->left = tree->left;
+      |                   ^~
+treemap.c:136:21: error: ‘TreeMap’ has no member named ‘left’
+  136 |     new->left = tree->left;
+      |                     ^~
+Compilation failed
+f5aa22e
