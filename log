@@ -253,3 +253,32 @@ treemap.c:136:15: error: ‘TreeMap’ has no member named ‘left’
       |               ^~
 Compilation failed
 e76b781
+Mon 26 Sep 2022 12:45:03 AM UTC: 
+ treemap.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘firstTreeMap’:
+treemap.c:134:6: error: ‘TreeNode’ has no member named ‘current’
+  134 |   new->current = tree->left;
+      |      ^~
+treemap.c:134:22: error: ‘TreeMap’ has no member named ‘left’
+  134 |   new->current = tree->left;
+      |                      ^~
+treemap.c:135:12: error: ‘TreeNode’ has no member named ‘current’
+  135 |   while(new->current != NULL){
+      |            ^~
+treemap.c:136:8: error: ‘TreeNode’ has no member named ‘current’
+  136 |     new->current = tree->left;
+      |        ^~
+treemap.c:136:24: error: ‘TreeMap’ has no member named ‘left’
+  136 |     new->current = tree->left;
+      |                        ^~
+treemap.c:138:13: error: ‘TreeNode’ has no member named ‘current’
+  138 |   return new->current->pair->value;
+      |             ^~
+treemap.c:139:1: error: control reaches end of non-void function [-Werror=return-type]
+  139 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+69f9e6e
