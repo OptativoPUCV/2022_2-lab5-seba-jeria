@@ -427,3 +427,9 @@ treemap.c:156:39: error: expected identifier before ‘->’ token
       |                                       ^~
 Compilation failed
 afb5fb5
+Mon 26 Sep 2022 01:43:11 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  17|4
+total_score: 25/70
+a73c488
