@@ -481,3 +481,9 @@ treemap.c:184:8: note: previous definition of ‘firstTreeMap’ was here
       |        ^~~~~~~~~~~~
 Compilation failed
 a998eee
+Wed 28 Sep 2022 11:22:31 PM UTC: 
+ treemap.c | 8 --------
+ 1 file changed, 8 deletions(-)
+ tests:  29|0
+total_score: 70/70
+229449a
